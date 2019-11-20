@@ -1,0 +1,304 @@
+// shows section
+
+.shows{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    text-align: center;
+    background:  $light_black_color;
+    color: white;
+    @media(min-width:768px) {
+        grid-template-rows: auto auto auto auto auto ;
+        grid-template-columns: 50vw 50vw;
+    }
+    @media(min-width:1024px){
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+    }
+}
+
+.heading{
+    text-align: center;
+    @media(min-width:768px){
+        grid-column: 1/-1;
+    }
+    &__title{
+        position: relative;
+        padding: 40px 40px;
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 100;
+        text-transform: uppercase;
+        color: white;
+        transition: .3 all ease;
+        text-shadow: 0px 2px 7px rgb(0, 0, 0);
+        @media(min-width:320px){
+            padding: 60px 0 0 0;
+        }
+        @media(min-width:768px){
+            font-size: 2.8rem;
+            padding: 100px 0;
+        }
+        @media(min-width:1024px){
+            font-size: 3.2rem;
+            padding: 100px 0;
+        }
+        @media(min-width:1024px) and (min-height:1366px){
+            font-size: 4rem;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70px;
+            top: 115%;
+            left: calc(50% - 35px);
+            transform: translate(-50% -50%);
+            background: $rose-color;
+            @media(min-width:320px){
+                top: 120%;
+            }
+            @media(min-width:768px){
+                top: 80%;
+            }
+            @media(min-width:1024px){
+                top: 70%;
+                width: 80px;
+            }
+        }
+    }
+    &__text{
+        margin: 60px auto;
+        max-width:  350px;
+        font-size: 1rem;
+        line-height: 30px;
+        color: rgba(255,255,255,.5);
+        text-shadow: 0px 2px 7px rgb(0, 0, 0);
+        @media(min-width:320px){
+            max-width:  300px;
+        }
+        @media(min-width:360px){
+            font-size: 1.1rem;
+        }
+        @media(min-width:411px){
+            font-size: 1.2rem;
+        }
+        @media(min-width:414px) and (min-height: 736px){
+            font-size: 1.4rem;
+        }
+        @media(min-width:768px){
+            margin: 50px auto 90px auto;
+            font-size: 2rem;
+            max-width:  500px;
+        }
+        @media(min-width:1024px){
+            margin: 0px auto 100px auto;
+            font-size: 2rem;
+            max-width:  600px;
+            line-height: 40px;
+        }
+        @media(min-width:1024px) and (min-height:1366px){
+            font-size: 2.3rem;
+            max-width:  700px;
+        }
+    }
+}
+.show{
+    &__img1{
+        position: relative;
+        height: 50vh;
+        width: 85%;
+        margin: 0 auto;
+        background-image: url("../img/shows__img/img_1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        @media(min-width:533px) and(orientation:landscape){
+            height:50vh;
+            width: 80%;
+        }
+        @media(min-width:768px){
+            height: 40vh;
+            width: 90%;
+        }
+        @media(min-width:1024px){
+            height: 50vh;
+            margin: 0 auto 100px auto;
+            transition: .4s all ease;
+            &:hover{
+                transform: scale(.95);
+                box-shadow: 0px 2px 38px 13px rgba(0,0,0,0.75);
+            }
+        }
+        @media(min-width:1366px){
+            height: 40vh;
+            width: 70%;
+        }
+    }
+    &__img2{
+        position: relative;
+        height: 50vh;
+        width: 85%;
+        margin: 0 auto;
+        background-image: url("../img/shows__img/img_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        @media(min-width:533px) and(orientation:landscape){
+            height:50vh;
+            width: 80%;
+        }
+        @media(min-width:768px){
+            height: 40vh;
+            width: 90%;
+        }
+        @media(min-width:1024px){
+            height: 50vh;
+            margin: 0 auto 100px auto;
+            transition: .4s all ease;
+            &:hover{
+                transform: scale(.95);
+                box-shadow: 0px 2px 38px 13px rgba(0,0,0,0.75);
+            }
+        }
+        @media(min-width:1366px){
+            height: 40vh;
+            width: 70%;
+        }
+    }
+    &__img3{
+        position: relative;
+        height: 50vh;
+        width: 85%;
+        margin: 0 auto;
+        background-image: url("../img/shows__img/img_3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        @media(min-width:533px) and(orientation:landscape){
+            height:50vh;
+            width: 80%;
+        }
+        @media(min-width:768px){
+            height: 40vh;
+            width: 90%;
+        }
+        @media(min-width:1024px){
+            height: 50vh;
+            margin: 0 auto 100px auto;
+            transition: .4s all ease;
+            &:hover{
+                transform: scale(.95);
+                box-shadow: 0px 2px 38px 13px rgba(0,0,0,0.75);
+            }
+        }
+        @media(min-width:1366px){
+            height: 40vh;
+            width: 70%;
+        }
+    }
+    &__img4{
+        position: relative;
+        height: 50vh;
+        width: 85%;
+        margin: 0 auto;
+        background-image: url("../img/shows__img/img_4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        @media(min-width:533px) and(orientation:landscape){
+            height:50vh;
+            width: 80%;
+        }
+        @media(min-width:768px){
+            height: 40vh;
+            width: 90%;
+        }
+        @media(min-width:1024px){ 
+            height: 50vh;
+            margin: 0 auto 100px auto;
+            transition: .4s all ease; 
+            &:hover{
+                transform: scale(.95);
+                box-shadow: 0px 2px 38px 13px rgba(0,0,0,0.75);
+            }
+        }
+        @media(min-width:1366px){
+            height: 40vh;
+            width: 70%;
+        }
+    }
+    .imageDesc{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        &__title{
+            height: 40px;
+            line-height: 40px;
+            width: 120px;
+            font-size: 0.8rem;
+            background: $rose-color;
+            text-shadow: 0px 2px 7px rgb(0, 0, 0);
+            @media(min-width:375px) and (min-height:812px){
+                height: 50px;
+                line-height: 50px;
+                width: 140px;
+                font-size: 1rem;
+            }
+            @media(min-width:414px){
+                height: 50px;
+                line-height: 50px;
+                width: 140px;
+                font-size: 1rem;
+            }
+            @media(min-width:768px){
+                height: 55px;
+                line-height: 55px;
+                width: 160px;
+                font-size: 1.2rem;
+            }
+            @media(min-width:1024px) and (min-height:1366px){
+                width: 170px;
+                font-size: 1.4rem;
+            }
+        }
+        &__span{
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            width: 180px;
+            font-size: 0.8rem;
+            background: black;
+            letter-spacing: 1.2px;
+            @media(min-width:375px) and (min-height:812px){
+                height: 30px;
+                line-height: 30px;
+                width: 200px;
+                font-size: 0.9rem;
+            }
+            @media(min-width:414px){
+                height: 30px;
+                line-height: 30px;
+                width: 200px;
+                font-size: 0.9rem;
+            }
+            @media(min-width:768px){
+                height: 35px;
+                line-height: 35px;
+                width: 210px;
+                font-size: 1rem;
+            }
+            @media(min-width:1024px) and (min-height:1366px){
+                width: 231px;
+                font-size: 1.1rem;
+            }
+        }
+    }
+   
+}
